@@ -4,9 +4,12 @@ const questionElement = document.getElementById("question");
 const showAnswerButton = document.getElementById("show-answer-btn");
 const answerElement = document.getElementById("answer");
 const nextButton = document.getElementById("next-btn");
+const questionCounter = document.getElementById("question-counter");
 
 let qaList = []; // Array para almacenar las preguntas y respuestas
 let currentQuestionIndex = 0;
+let totalQuestions = 0;
+let answeredQuestions = 0;
 
 // Función para mostrar la próxima pregunta
 function showNextQuestion() {
@@ -15,12 +18,19 @@ function showNextQuestion() {
         questionElement.textContent = currentQuestion.question;
         answerElement.textContent = currentQuestion.answer;
         currentQuestionIndex++;
+        answeredQuestions++; // Incrementar el contador de preguntas respondidas
+        updateQuestionCounter();
     } else {
         questionElement.textContent = "¡Todas las preguntas han sido respondidas!";
         showAnswerButton.style.display = "none";
         nextButton.style.display = "none";
     }
 }
+
+function updateQuestionCounter() {
+    questionCounter.textContent = `${answeredQuestions}/${totalQuestions}`;
+}
+
 
 // Función para cargar las preguntas y respuestas desde un archivo de texto
 async function loadQuestionsFromFile() {
@@ -33,7 +43,9 @@ async function loadQuestionsFromFile() {
                 const [question, answer] = line.split('|');
                 qaList.push({ question, answer });
             }
-
+            totalQuestions = qaList.length;
+            answeredQuestions = 0;
+            updateQuestionCounter();
             for (let i = qaList.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [qaList[i], qaList[j]] = [qaList[j], qaList[i]];
