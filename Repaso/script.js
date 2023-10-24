@@ -16,7 +16,8 @@ function showNextQuestion() {
     if (currentQuestionIndex < qaList.length) {
         const currentQuestion = qaList[currentQuestionIndex];
         questionElement.textContent = currentQuestion.question;
-        answerElement.textContent = currentQuestion.answer;
+        // Utiliza innerHTML en lugar de textContent para permitir HTML
+        answerElement.innerHTML = currentQuestion.answer;
         currentQuestionIndex++;
         answeredQuestions++; // Incrementar el contador de preguntas respondidas
         updateQuestionCounter();
@@ -31,17 +32,17 @@ function updateQuestionCounter() {
     questionCounter.textContent = `${answeredQuestions}/${totalQuestions}`;
 }
 
-
 // Función para cargar las preguntas y respuestas desde un archivo de texto
 async function loadQuestionsFromFile() {
     try {
-        const response = await fetch("preguntas.txt");
+        const response = await fetch("preguntas/justo.txt");
         if (response.ok) {
             const text = await response.text();
             const lines = text.split('\n');
             for (const line of lines) {
                 const [question, answer] = line.split('|');
-                qaList.push({ question, answer });
+                const formattedAnswer = answer.replace(/\\n/g, '<br>');
+                qaList.push({ question, answer: formattedAnswer });
             }
             totalQuestions = qaList.length;
             answeredQuestions = 0;
@@ -50,7 +51,7 @@ async function loadQuestionsFromFile() {
                 const j = Math.floor(Math.random() * (i + 1));
                 [qaList[i], qaList[j]] = [qaList[j], qaList[i]];
             }
-            
+
             showNextQuestion();
         } else {
             console.error("No se pudo cargar el archivo de preguntas.");
