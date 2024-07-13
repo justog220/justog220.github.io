@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://justogm.github.io/sitemap.xml
+Sitemap: https://justog220.github.io/sitemap.xml
