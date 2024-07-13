@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 4
+title: Técnicas Bioinformáticas Para el Estudio de Proteínas Desconocidas
 description: another without an image
-img:
+img: assets/img/tif-eb.png
 importance: 3
-category: fun
+redirects: https://github.com/justog220/ABP-EB
+category: Formación
 ---
 
 Every project has a beautiful feature showcase page.

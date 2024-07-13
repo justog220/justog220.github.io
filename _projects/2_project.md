@@ -1,13 +1,22 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
-importance: 2
-category: work
+title: Base de datos de proteínas de unión al ARN
+description: Diseño e implementación de una base de datos para almacenar información sobre proteínas de unión al ARN.
+img: assets/img/proteina.png
+importance: 3
+redirects: https://github.com/justog220/RBPdb
+category: Formación
 giscus_comments: true
 ---
 
+
+
+
+
+
+
+
+<!-- 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
@@ -79,3 +88,5 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+
+-->

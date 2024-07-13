@@ -1,25 +1,24 @@
 ---
 layout: about
-title: about
+title: acerca de mí
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Estudiante Licenciatura en Bioinformática.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Oro Verde, Entre Ríos</p>
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
+latest_posts: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Soy Justo Garcia, estudiante de Bioinformática con un profundo interés en la programación y una firme vocación por la investigación científica. Actualmente, estoy completando mi formación en la Facultad de Ingeniería de la Universidad Nacional de Entre Ríos y dando mis primeros pasos en la investigación en el campo de la bioinformática.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Durante mi trayectoria académica, he tenido la oportunidad de participar y/o llevar a cabo diversos proyectos en diferentes áreas de la bioinformática. Mi experiencia en la creación de soluciones tecnológicas para problemas biológicos me ha proporcionado habilidades sólidas en la integración de datos, análisis estadístico y desarrollo de software.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Además de mi trabajo académico, disfruto explorando nuevas tecnologías y contribuyendo a la construcción de software. 
