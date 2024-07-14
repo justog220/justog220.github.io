@@ -251,6 +251,18 @@
       "startDate": "2024-06-01",
       "endDate": "2024-06-25",
       "_url": "https://github.com/justog220/TIF-Geomatica"
+    },
+    {
+      "name": "Herramienta de seguimiento de interacciones del usuario con prototipos",
+      "summary": "Aplicación web utilizando Flask y WebGazer.js para realizar el seguimiento y registro de la vista del usuario sobre un prototipo de Figma.",
+       "highlights": [
+    "Implementación de un sistema de seguimiento ocular en tiempo real utilizando WebGazer.js.",
+    "Diseño de una interfaz de usuario intuitiva y fácil de usar para visualizar datos de seguimiento.",
+    "Uso de Flask para desarrollar una backend robusto y eficiente."
+  ],
+      "startDate": "2024-01-01",
+      "endDate": "2024-01-30",
+      "_url": "https://github.com/justogm/user-gaze-track"
     }
   ]
 }
