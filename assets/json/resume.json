@@ -65,7 +65,20 @@
       "courses": ""
     }
   ],
-  "awards": "",
+  "awards": [
+    {
+      "title" : "Mejor trabajo en modalidad poster",
+      "date" : "2024-11-06",
+      "awarder" : "ISCB Regional Student Group Argentina",
+      "summary" : "Mejor trabajo en modalidad poster en 9no Simposio Argentino de Jóvenes Investigadores en Bioinformática"
+    },
+    {
+      "title" : "Expositor distinguido",
+      "date" : "2024-10-08",
+      "awarder" : "Red de Universidades Nacionales con carreras en Informática (RedUNCI)",
+      "summary" : "Expositor distinguido en workshop de Ingeniería de Software del XXX Congreso Argentino de Ciencias de la Computación"
+    }
+  ],
   "certificates": [
     {
       "name": "Introducción a Herramientas de Bioinformática y Biología Computacional en Microbiología",
@@ -87,15 +100,33 @@
       "issuer": "Asociación Argentina de Bioinformática y Biología Computacional - Red Iberoamericana de Inteligencia Artificial para Big Biodata",
       "url": "",
       "icon": "fa-solid fa-bookmark"
+    },
+    {
+      "name" : "Visualización de datos en R",
+      "date" : "2024-08-28",
+      "issuer" : "ISCB Regional Student Group Argentina",
+      "icon": "fa-solid fa-bookmark"
     }
   ],
   "publications": [
+    {
+      "name" : "Poster: “Extracción de características ambientales para la predicción de la densidad de mosquitos en áreas urbanas”",
+      "publisher" : "Garcia Justo; Walter Elías",
+      "releaseDate" : "2024-11-06",
+      "summary" : "Trabajo presentado en el 9no Simposio Argentino de Jóvenes Investigadores en Bioinformática, distinguido como mejor trabajo de su modalidad."
+    },
     {
       "name": "Poster: “Bacterias fluorescentes asociadas a escorpiones de importancia sanitaria. Un abordaje experimental implementado en contexto de enseñanza en el/la/le estudiante”",
       "publisher": "Boero, M; Erni, E; Escobar Guardia, A; Garcia, J; Gasco Aguerri, I; Gonzales, C; Machtey, M; Schierloh, L.",
       "releaseDate": "2023-06-15",
       "url": "",
       "summary": ""
+    },
+    {
+      "name" : "Aporte a la confiabilidad de programas C++ mediante una herramienta ad-hoc para implementar contratos",
+      "publisher" : "Facultad de Informática (UNLP)",
+      "url" : "https://sedici.unlp.edu.ar/handle/10915/172755",
+      "summary" : "Short paper presentado en el workshop de Ingeniería de Software del XXX Congreso Argentino de Ciencias de la Computación. Premiado como exposición distinguida."
     }
   ],
   "skills": [
